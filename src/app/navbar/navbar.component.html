@@ -1,0 +1,50 @@
+<div class="flex flex-wrap place-items-center">
+  <section class="relative mx-auto">
+    <!-- navbar -->
+    <nav class="navbar flex justify-between bg-gray-900 text-white w-screen">
+      <div class="px-5 xl:px-12 py-3 flex w-full items-center">
+        <a class="text-3xl font-bold font-heading" href="#">
+      <p class="text-yellow-600">
+        You
+      </p>
+          <p class="text-green-300 pl-5">
+            Quiz
+          </p>
+        </a>
+        <!-- Nav Links -->
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12" id="navLinks">
+          <li><a class="hover:text-gray-200" href="#">Home</a></li>
+          <li><a [routerLink]="'/answers'" class="hover:text-gray-200" href="#">Answers</a></li>
+          <li><a [routerLink]="'/questions'" class="hover:text-gray-200" href="#">Questions</a></li>
+          <li><a  [routerLink]="'/subjects'" class="hover:text-gray-200" href="#">Subjects</a></li>
+          <li><a [routerLink]="'/levels'" class="hover:text-gray-200" href="#">Levels</a></li>
+          <li><a [routerLink]="'/medias'" class="hover:text-gray-200" href="#">Medias</a></li>
+        </ul>
+      </div>
+      <button class="navbar-burger self-center mr-12 xl:hidden" type="button" id="burgerBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </section>
+</div>
+
+<!-- Does this resource worth a follow? -->
+<div class="absolute bottom-0 right-0 mb-4 mr-4 z-10">
+  <div>
+    <a title="Follow me on twitter" href="https://www.twitter.com/asad_codes" target="_blank" class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+      <img class="object-cover object-center w-full h-full rounded-full" src="https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2019/12/twitter-logo.jpg"/>
+    </a>
+  </div>
+</div>
+
+<script>
+  const burgerBtn = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  burgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('hidden');
+  });
+</script>
+
