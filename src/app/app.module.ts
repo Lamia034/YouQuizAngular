@@ -12,6 +12,8 @@ import { LevelComponent } from './levels/level.component';
 import { SubjectComponent } from './subjects/subject.component';
 import { QuestionComponent } from './questions/question.component';
 import {MediaComponent} from "./medias/media.component";
+import { QuizComponent } from './quizs/quiz.component';
+import {QuizdetailComponent} from './quizdetails/quizdetail.component';
 // import { MediaComponent } from './medias/media.component';
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {MediaComponent} from "./medias/media.component";
     LevelComponent,
     SubjectComponent,
     QuestionComponent,
-    MediaComponent
+    MediaComponent,
+    QuizComponent,
+    QuizdetailComponent
   ],
     imports: [
         BrowserModule,
